@@ -5,6 +5,16 @@ import "math"
 //https://en.wikipedia.org/wiki/Vincenty%27s_formulae
 //https://www.movable-type.co.uk/scripts/latlong-vincenty.html
 
+func InverseProblem(latitude1, longitude1, latitude2, longitude2 float64) (float64, float64, float64) {
+	// TODO: Implement.
+
+	s := 0.0
+	alpha1 := 0.0
+	alpha2 := 0.0
+
+	return alpha1, alpha2, s
+}
+
 func DirectProblem(latitude, longitude, azimuth, distance float64) (float64, float64, float64) {
 	f := 1.0 / 298.257223563
 	a := 6378137.0
